@@ -1,6 +1,7 @@
 config = {
     'username': 'shi-i-chan',
     'repos': [
+        'LOC',
         'jp_parser',
         'kaneshi',
         'diet-calculator',

@@ -26,6 +26,8 @@ def get_results(config: dict) -> Tuple[List[str], List[int]]:
                 lang = element['language']  # NOQA
                 if lang in results:
                     results[lang] += int(element['linesOfCode'])  # NOQA
+        else:
+            print(f'Some error with {repo} repository. Try to restart.')
     return list(results.keys()), list(results.values())
 
 
