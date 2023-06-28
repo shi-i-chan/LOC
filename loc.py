@@ -84,7 +84,7 @@ def get_figure(save: bool = False) -> NoReturn:
 
     fig.update_yaxes(title_text="LOC", row=1, col=2)
     fig.update_xaxes(title_text="Language", row=1, col=2)
-    fig.update_layout(title_text="Count lines of code", height=450, width=1000)
+    fig.update_layout(title_text="All public repositories lines of code", height=450, width=1000)
 
     if save:
         fig.write_image("LOC.png")
