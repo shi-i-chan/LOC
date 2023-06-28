@@ -1,5 +1,7 @@
 # Lines Of Code counter
 
+Data received from https://codetabs.com/count-loc/count-loc-online.html
+
 1) Fill username, repository names and languages for counting in `config.py`.
 
 <ul>
