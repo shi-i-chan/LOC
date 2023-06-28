@@ -24,7 +24,7 @@ config = {
 
 </ul>
 
-2) Run `loc.py`.
+2) Run `loc.py` (might take time).
 
 <ul>
 
