@@ -1,5 +1,12 @@
 # Lines Of Code counter
 
+<details open>
+<summary>
+ENG readme
+</summary>
+
+<ul>
+
 Data received from https://codetabs.com/count-loc/count-loc-online.html
 
 1) Fill username, repository titles and languages for counting in `config.py`.
@@ -34,10 +41,16 @@ File `LOC.png` will appear in root folder.
 
 ![image](https://github.com/shi-i-chan/LOC/blob/main/LOC.png)
 
+<ul>
+
+</details>
+
 <details>
 <summary>
 RU readme
 </summary>
+
+<ul>
 
 Данные получены с сайта https://codetabs.com/count-loc/count-loc-online.html
 
@@ -72,5 +85,7 @@ config = {
 </ul>
 
 ![image](https://github.com/shi-i-chan/LOC/blob/main/LOC.png)
+
+</ul>
 
 </details>
