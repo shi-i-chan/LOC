@@ -1,12 +1,19 @@
 config = {
     'username': 'shi-i-chan',
     'repos': [
-        'LOC',
-        'jp_parser',
         'kaneshi',
+        'practice',
         'diet-calculator',
-        'python_practice',
-        'some-practice',
+        'jp_parser',
+        'LOC',
+        'ping_checker',
     ],
-    'languages': ['Python', 'C#', 'Assembly', 'Verilog'],
+    'languages': [
+        'Python',
+        'SQL',
+        'C++',
+        'C#',
+        'Assembly',
+        'Verilog',
+    ],
 }

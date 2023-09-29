@@ -10,7 +10,9 @@ from config import config
 
 
 def get_data(repo: str) -> Union[str, bool]:
-    url = f'https://api.codetabs.com/v1/loc/?github={config["username"]}/{repo}'
+    print(repo)
+    url = f'https://api.codetabs.com/v1/loc?github={config["username"]}/{repo}'
+    print(url)
     with requests.Session() as s:
         data = s.get(url)
     if data.status_code == 200:
@@ -28,12 +30,11 @@ def get_results(config: dict) -> Tuple[List[str], List[int]]:
                     results[lang] += int(element['linesOfCode'])  # NOQA
         else:
             print(f'Some error with {repo} repository. Try to restart.')
-    return list(results.keys()), list(results.values())
+    return list(results.values()), list(results.keys()),
 
 
 def get_figure(save: bool = False) -> NoReturn:
-    labels, values = get_results(config)
-
+    values, labels = zip(*sorted(zip(*get_results(config)), reverse=True))
     colors = px.colors.qualitative.Plotly
     fig = make_subplots(rows=1, cols=2,
                         specs=[[{"type": "pie"}, {"type": "bar"}]])
@@ -92,4 +93,12 @@ def get_figure(save: bool = False) -> NoReturn:
         fig.show()
 
 
-get_figure(save=True)
+# so bad internet connection
+for i in range(100):
+    print(f'Try {i}')
+    try:
+        get_figure(save=True)
+        break
+    except Exception as e:
+        print(e)
+        pass

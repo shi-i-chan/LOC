@@ -1,0 +1,2 @@
+python loc.py
+pause
